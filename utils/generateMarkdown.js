@@ -32,13 +32,15 @@ function renderLicenseLink(license) {
 
 // Create a function that returns the license section of README. If there is no license, return an empty string
 function renderLicenseSection(license) {
-    (license) ? (`${renderLicenseBadge(license)} This project is licensed under the ${renderLicenseLink(license)} license.`) : ("");
+    return (license) ? (`${renderLicenseBadge(license)} This project is licensed under the ${renderLicenseLink(license)} license.`) : ("");
 }
 
 // Create a function to generate markdown for README
-function generateMarkdown(results) {
-    return `# ${results.title}
-#### Table of contents
+function generateMarkdown(data) {
+    return `# ${data.title}
+    
+    #### Table of contents
+
     1. [Project Description](#project-description)
     2. [Installation Instructions](#installation-instructions)
     3. [Usage Information](#usage-information)
@@ -46,26 +48,27 @@ function generateMarkdown(results) {
     5. [Test Instructions](#test-instructions)
     6. [License](#license)
     7. [Questions](#questions)
+
     ## Project Description
-    * ${results.description}
+    * ${data.description}
     
     ## Installation Instructions
-    * ${results.installation}
+    * ${data.installation}
     
     ## Usage Information
-    * ${results.usage}
+    * ${data.usage}
     
     ##Contributor Guidlines
-    * ${results.contribution}
+    * ${data.contribution}
     
     ## Test Instructions
-    * ${results.test}
+    * ${data.test}
     
-    ## License
-    * ${renderLicenseBadge(results),renderLicenseBadge(results)}
+    ## License 
+    * ${renderLicenseSection(data.license)}
     
     ## Questions
-    * Emails me at ${results.email}
-    * Find me on GitHub [${results.github}](http://github.com/${results.github})`;
+    * Emails me at ${data.email}
+    * Find me on GitHub [${data.github}](http://github.com/${data.github})`;
 }
 module.exports = generateMarkdown;

@@ -62,10 +62,10 @@ function writeToFile(fileName, data) {
     });
 }
 
-// Create a function to initialize app & initialized it after
+// Create a function to initialize app & initialized it
 function init() {
-    inquirer.prompt(questions).then((results) => {
-            writeToFile("./utils/README.md", generateMarkdown(results));
+    inquirer.prompt(questions).then((data) => {
+            writeToFile("./utils/README.md", data);
         })
         .catch(error => {
             if (error.isTtyError) {
