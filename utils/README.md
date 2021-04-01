@@ -1,6 +1,6 @@
-# title
+# This is the title of project
     
-    #### Table of contents
+#### Table of contents
 
     1. [Project Description](#project-description)
     2. [Installation Instructions](#installation-instructions)
@@ -10,24 +10,24 @@
     6. [License](#license)
     7. [Questions](#questions)
 
-    ## Project Description
-    * desc
+## Project Description
+    * the description briefly of project
     
-    ## Installation Instructions
-    * comm
+## Installation Instructions
+    * npm install
     
-    ## Usage Information
-    * user
+## Usage Information
+    * information to be known by user when using the repo
     
-    ##Contributor Guidlines
-    * cont
+## Contributor Guidlines
+    * information if the user would like to contribute to it
     
-    ## Test Instructions
-    * test
+## Test Instructions
+    * npm test
     
-    ## License 
-    * [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) This project is licensed under the [MIT](https://opensource.org/licenses/MIT) license.
+## License 
+    * [![License](https://img.shields.io/badge/License-Apache%202.0-yellowgreen.svg)](https://opensource.org/licenses/Apache-2.0) This project is licensed under the [Apache 2.0](https://opensource.org/licenses/Apache-2.0) license.
     
-    ## Questions
+## Questions
     * Emails me at email@email.com
-    * Find me on GitHub [usern](http://github.com/usern)
+    * Find me on GitHub [CesarOCampos](http://github.com/CesarOCampos)
