@@ -53,16 +53,6 @@ const questions = [{
     },
 ]
 
-.catch(error => {
-    if (error.isTtyError) {
-        console.log("You must use a different application to access this program.");
-        // Prompt couldn't be rendered in the current environment
-    } else {
-        // Something else went wrong
-        console.log("An error has occurred.");
-    }
-});
-}
 // Create a function to write README file
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, generateMarkdown(data), function(err) {
@@ -72,14 +62,18 @@ function writeToFile(fileName, data) {
     });
 }
 
-// Create a function to initialize app
+// Create a function to initialize app & initialized it after
 function init() {
-    inquirer.prompt(questions).then((data) => {
-        console.log(JSON.stringify(data, null, " "));
-        data.getLicense = getLicense(data.license);
-        writeToFile("./utils/README.md", data);
-    });
+    inquirer.prompt(questions).then((results) => {
+            writeToFile("./utils/README.md", generateMarkdown(results));
+        })
+        .catch(error => {
+            if (error.isTtyError) {
+                console.log("You must use a different application to access this program.");
+            } else {
+                console.log("An error occurred.");
+            }
+        });
 }
 
-// Function call to initialize app
 init();
