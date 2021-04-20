@@ -1,4 +1,4 @@
-# This is the title of project
+# Team Profile Generator
     
 #### Table of contents
 
@@ -11,22 +11,22 @@
     7. [Questions](#questions)
 
 ## Project Description
-    * the description briefly of project
+    * description
     
 ## Installation Instructions
-    * npm install
+    * npm i
     
 ## Usage Information
-    * information to be known by user when using the repo
+    * 
     
 ## Contributor Guidlines
-    * information if the user would like to contribute to it
+    *  student
     
 ## Test Instructions
     * npm test
     
 ## License 
-    * [![License](https://img.shields.io/badge/License-Apache%202.0-yellowgreen.svg)](https://opensource.org/licenses/Apache-2.0) This project is licensed under the [Apache 2.0](https://opensource.org/licenses/Apache-2.0) license.
+    * [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) This project is licensed under the [MIT](https://opensource.org/licenses/MIT) license.
     
 ## Questions
     * Emails me at email@email.com
