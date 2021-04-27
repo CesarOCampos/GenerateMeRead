@@ -47,7 +47,7 @@ THEN I am taken to the corresponding section of the README
 
 ## MockUp
 
-https://drive.google.com/file/d/19mYnTv1mANO48FrZpTPbnT0qC6wYEc7j/view
+https://drive.google.com/file/d/19g7BkE4UcBj6F0w9d-STaL1o1G4IX49T/view?usp=sharing
 
 ## Link
 https://cesarocampos.github.io/GenerateMeRead/
